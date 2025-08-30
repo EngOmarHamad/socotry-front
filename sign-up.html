@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <title>Socotry - سوكتري</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="assets/css/select2-bootstrap-5-theme.rtl.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
+    <style>
+    
+
+    </style>
+  </head>
+  <body>
+    <div class="preloader-wrapper">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column w-100 h-100"
+      >
+        <img class="" width="200" src="assets/images/logo/logo.png" alt />
+        <span class="indicator-progress text-primary">
+          <span
+            class="spinner-border spinner-border-sm align-middle ms-2"
+          ></span>
+          انتظر من فضلك ...
+        </span>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center min-vh-100 froms-container" >
+      <form
+        class="outh-form sign-up-form shadow-lg p-3 rounded bg-white" style="max-width: 700px; width: 100%"
+      >
+        <div
+          class="d-flex mb-2 justify-content-center flex-column align-items-center"
+        >
+          <img
+            class="mb-10 mb-lg-20"
+            src="assets/images/logo/logo.png"
+            alt="Logo"
+            width="150"
+          />
+          <h6 class="opacity-75-hover text-secondary me-1 mt-3">
+            أهلا وسهلا بكم في موقع سوكتري
+          </h6>
+        </div>
+        <div class="text-center mb-11">
+          <h2 class="text-primary fw-bolder mb-3">تسجيل جديد</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-3">
+            <label for="name" class="form-label fw-bold mb-2"
+              >الاسم الأول</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="الاسم الأول"
+            />
+          </div>
+          <div class="col mb-3">
+            <label for="familyname" class="form-label fw-bold mb-2"
+              >إسم العائلة</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="familyname"
+              placeholder="الاسم العائلة"
+            />
+          </div>
+          <div class="col mb-3">
+            <label class="form-label fw-bold fw-bold mb-2">رقم الجوال</label>
+            <div class="input-group">
+              <select
+                class="form-select select2-country"
+                style="width: 140px"
+                title="حدد الدولة"
+              > <option
+                  value="+966"
+                  selected
+                  data-flag="assets/flags/oman.png"
+                >
+                  (+966)
+                </option>
+                <option
+                  value="+966"
+                  data-flag="assets/flags/download 2.png"
+                >
+                  (+966)
+                </option>
+                <option value="+971" data-flag="assets/flags/download.png">
+                  (+971)
+                </option>
+                <option value="+965" data-flag="assets/flags/download (1).png">
+                  (+965)
+                </option>
+              </select>
+              <input
+                type="tel"
+                class="form-control phone-numnber"
+                placeholder="5XXXXXXXX"
+                pattern="[5]{1}[0-9]{8}"
+                title="يجب أن يبدأ الرقم بـ 5 ويحتوي على 9 أرقام"
+              />
+            </div>
+            <div class="form-text text-muted">مثال: 512345678</div>
+          </div>
+          <div class="col mb-3">
+            <label for="email" class="form-label fw-bold mb-2"
+              >البريد الإلكتروني:</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="البريد الإلكتروني"
+            />
+          </div>
+          <div class="col mb-3">
+            <label for="password" class="form-label fw-bold mb-2"
+              >كلمة المرور:</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="كلمة المرور"
+            />
+          </div>
+          <div class="col mb-3">
+            <label for="confirm-password" class="form-label fw-bold mb-2"
+              >تأكيد كلمة المرور:</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="confirm-password"
+              placeholder="تأكيد كلمة المرور"
+            />
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary w-100 mt-3 mb-2">
+            إرسال
+          </button>
+        </div>
+        <div class="text-gray-500 text-center fw-semibold">
+          لديك حساب ؟
+          <a
+            href="login.html"
+            class="link-underline link-underline-opacity-0 text-primary"
+            >تسجيل الدخول</a
+          >
+        </div>
+      </form>
+    </div>
+
+    <script src="assets/js/lib/jquery.min.js"></script>
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/lib/swiper-bundle.min.js"></script>
+    <script src="assets/js/lib/select2.min.js"></script>
+    <script src="assets/js/lib/aos.js"></script>
+    <script src="assets/js/custom/script.js"></script>
+  </body>
+</html>

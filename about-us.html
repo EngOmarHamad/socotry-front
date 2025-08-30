@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <title>Socotry - سوكتري</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content>
+    <meta name="keywords" content>
+    <meta name="description" content>
+    <link type="image/x-icon" href="assets/images/logo/logo.png" rel="shortcut icon">
+    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="assets/css/select2-bootstrap-5-theme.rtl.min.css" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader-wrapper">
+      <div class="d-flex justify-content-center align-items-center flex-column w-100 h-100">
+        <img class src="assets/images/logo/logo.png" alt width="200">
+        <span class="indicator-progress text-primary">
+          <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+          انتظر من فضلك ...
+        </span>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" id="offcanvasCart" data-bs-scroll="true" aria-labelledby="My Cart" tabindex="-1">
+      <div class="offcanvas-header align-items-center justify-content-between border-bottom">
+        <h5 class="d-flex gap-2 align-items-center m-0">
+          <span class="text-primary"> سلة التسوق </span>
+          <span class="badge bg-primary rounded-circle">1</span>
+        </h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas" type="button" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="order-md-last">
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex align-items-center lh-sm justify-content-between">
+              <div class="d-flex gap-3 align-items-center">
+                <figure class="cart-product-image overflow-hidden">
+                  <a href="index.html" title="Product Title">
+                    <img class="tab-image" src="assets/images/products/الذهبي.png" alt="product-image">
+                  </a>
+                </figure>
+                <div>
+                  <h6 class="my-0 text-twoline">المسك الذهبي</h6>
+                  <div class="product-quantity my-2">
+                    <div class="product-quantity d-flex align-items-center">
+                      <button class="btn btn-sm btn-outline-primary btn-minus" type="button" title="minus-one">
+                        <svg class="bi bi-dash-lg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"></path>
+                        </svg>
+                      </button>
+                      <label class="d-none" for="search">Searh</label>
+                      <input class="form-control text-center quantity-input mx-2" id="search" name="search" type="number" value="1" min="1" style="width: 60px">
+                      <button class="btn btn-outline-primary btn-plus" type="button" title="plus one">
+                        <svg class="bi bi-plus-lg fw-bold" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="quantity">
+                    1 ×
+                    <span class="">
+                      <bdi>
+                        699.00&nbsp;
+                        <span class="">
+                          <span class="Saudi_Riyal_Symbol">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1124.14 1256.39">
+                              <path d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z"></path>
+                              <path d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z"></path>
+                            </svg>
+                          </span>
+                        </span>
+                      </bdi>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-link text-danger p-0 me-2" type="button" title="delete-favorite">
+                <svg class="bi bi-x-lg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"></path>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas-footer bg-light border-top">
+        <div class="border-bottom p-3 d-flex justify-content-between align-items-center">
+          <p class="fs-5 fw-bold m-0">المجموع:</p>
+          <p class="fs-5 text-primary m-0 fw-bold">
+            699.00
+            <span class="Saudi_Riyal_Symbol">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1124.14 1256.39">
+                <path d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z"></path>
+                <path d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z"></path>
+              </svg>
+            </span>
+          </p>
+        </div>
+        <div class="p-3 d-flex align-items-center gap-2">
+          <a class="btn btn-outline-primary w-100" type="submit" href="cart.html">عرض السلة</a>
+          <a class="btn btn-primary w-100" type="submit" href="check-out.html">إتمام الدفع</a>
+        </div>
+      </div>
+    </div>
+    <header>
+      
+      <nav class="container navbar navbar-expand-lg align-items-center mt-lg-2">
+        <a class="navbar-brand px-lg-0" href="index.html">
+          <img class src="assets/images/logo/logo.png" alt="Logo Delivin" width="80">
+        </a>
+        <div class="order-lg-last d-flex">
+          <button class="navbar-toggler order-last" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="d-flex menu-of-cart-fav-user position-relative justify-content-end list-unstyled m-0">
+            <li class="">
+              <div class="position-relative">
+                <a class="rounded-circle p-2 mx-1 user-list-container" id="toggleUserList" data-bs-placement="bottom" href="javascript:void(0)">
+                  <svg class="bi bi-person" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"></path>
+                  </svg>
+                </a>
+                <div class="card user-list-2 border-0 position-absolute" id="userlist">
+                  <div class="card-body p-3">
+                    <ul class="user-list list-unstyled m-0">
+                      <li class=" ">
+                        <a class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center active" href="dashboard.html">
+                          <svg class="bi bi-columns-gap" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path>
+                          </svg>
+                          لوحة التحكم
+                        </a>
+                      </li>
+                      <li class=" ">
+                        <a class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center" href="my-orders.html">
+                          <svg class="bi bi-list-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"></path>
+                          </svg>
+                          الطلبات
+                        </a>
+                      </li>
+                      <li class=" ">
+                        <a class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center" href="wishlist.html">
+                          <svg class="bi bi-star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"></path>
+                          </svg>
+                          المفضلة
+                        </a>
+                      </li>
+                      <li class=" ">
+                        <a class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center" href="my-account.html">
+                          <svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
+                          </svg>
+                          حسابي
+                        </a>
+                      </li>
+                      <li class=" ">
+                        <a class="text-decoration-none text-danger p-2 d-flex gap-2 align-items-center" href>
+                          <svg class="bi bi-box-arrow-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"></path>
+                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"></path>
+                          </svg>
+                          تسجيل الخروج
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="rounded-circle p-2 mx-1" data-bs-placement="bottom" data-bs-title="تسجيل الدخول" data-bs-toggle="tooltip" href="login.html" title="Authentication">
+                <svg class="bi bi-person-video2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M10 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"></path>
+                  <path d="M2 1a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM1 3a1 1 0 0 1 1-1h2v2H1zm4 10V2h9a1 1 0 0 1 1 1v9c0 .285-.12.543-.31.725C14.15 11.494 12.822 10 10 10c-3.037 0-4.345 1.73-4.798 3zm-4-2h3v2H2a1 1 0 0 1-1-1zm3-1H1V8h3zm0-3H1V5h3z"></path>
+                </svg>
+              </a>
+            </li>
+            <li class=" ">
+              <a class="rounded-circle p-2 mx-1 position-relative" data-bs-placement="bottom" data-bs-target="#offcanvasCart" data-bs-title="السلة" data-bs-toggle="offcanvas" href="#" title="Cart" aria-controls="offcanvasCart">
+                <svg class="bi bi-basket" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"></path>
+                </svg>
+                <span class="number-of-items-in-cart position-absolute d-flex justify-content-center align-items-center bg-white border shodaw rounded-circle">
+                  <span class style="font-size: 12px">1</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 nav gap-4">
+            <li class="nav-item">
+              <a class="text-decoration-none header-link active" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-decoration-none header-link" href="products.html">متجر سوكتري</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-decoration-none header-link" href="about-us.html">عن سوكتري</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-decoration-none header-link" href="contact-us.html">تواصل معنا</a>
+            </li>
+            <!-- <li class="nav-item">
+                                <a class=" text-decoration-none mt-lg-2  header-link2 text-dark" href="franchise-requset.html">طلب الفرنشايز</a>
+                            </li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="position-relative about-us hero-about-us" data-aos="fade-up">
+      <div class="d-flex justify-content-center align-items-center position-relative p-2" data-aos="fade-up" data-aos-delay="300">
+        <div class="text-center hero-content p-3 p-xl-5 rounded-5" data-aos="zoom-in" data-aos-delay="400">
+          <h1 class="display-5 fw-bold text-primary mb-4" data-aos="fade-up" data-aos-delay="500">
+            أهلاً وسهلاً في سوكتري للعطور
+          </h1>
+          <h4 class="text-white hero-text lh-lg" data-aos="fade-up" data-aos-delay="600">
+            سوكتري هو متجر عطور فاخر يقدم لك أرقى الروائح المختارة بعناية من
+            أجود الماركات العالمية. نسعى لإضفاء لمسة من الأناقة والجاذبية على
+            حياتك اليومية من خلال تشكيلتنا المتنوعة من العطور الرجالية
+            والنسائية. استمتع بتجربة فريدة من الفخامة والجودة مع كل زجاجة عطر.
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-xxl about-us-section p-0 py-5" data-aos="fade-up">
+      <div class="row row-cols-1 row-cols-lg-2 p-0 g-0">
+        <div class="col p-4 rounded-5" data-aos="fade-right" data-aos-delay="200">
+          <div class="overflow-hidden bg-primary rounded-5 h-100 d-flex justify-content-center align-items-center">
+            <h1 class="text-white text-center">
+              تَسَوُّقٌ ذَكِيٌّ بِأَسْعَارٍ مَعْقُولَةٍ
+            </h1>
+          </div>
+        </div>
+        <div class="col p-4" data-aos="fade-left" data-aos-delay="400">
+          <h6 class="section-title mb-4" data-aos="fade-up" data-aos-delay="500">
+            تعرّف علينا عن قرب
+          </h6>
+          <h3 class="section-main-title mb-2" data-aos="fade-up" data-aos-delay="600">
+            استمتع بأرقى العطور مع سوكتري
+          </h3>
+          <p class="section-content fs-5" data-aos="fade-up" data-aos-delay="700">
+            متجر "سوكتري" هو وجهتك المثالية لعالم العطور الفاخرة، حيث نقدم لك
+            مجموعة منتقاة بعناية من أجود الروائح العالمية. سواء كنت تبحث عن
+            العطور الرجالية أو النسائية، ستجد لدينا ما يعكس ذوقك الفريد ويضفي
+            لمسة من الأناقة والجاذبية على يومك. نحن نحرص على تقديم تجربة تسوق
+            ممتعة ومميزة مع أفضل الأسعار والجودة العالية في كل منتج.
+          </p>
+
+          <a class="btn btn-primary section-btn" data-aos="zoom-in" data-aos-delay="800" href="products.html">
+            متجرنا
+            <svg class="bi bi-arrow-left" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="container-xxl" data-aos="fade-up">
+      <section>
+        <div class="container-fluid px-1">
+          <div class="row p-0 g-0">
+            <div class="col-md-12 p-0 about-us-swiper">
+              <div class="swiper rounded-5 main-swiper h-100" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper h-100">
+                  <!-- هدفنا -->
+                  <div class="swiper-slide h-100" data-aos="fade-right" data-aos-delay="400">
+                    <div class="row h-100 g-0 banner-content w-100 h-100 bg-secondary">
+                      <div class="col h-100 d-flex justify-content-center align-items-center flex-column p-3 p-lg-5">
+                        <h1 class="text-center text-white" data-aos="fade-down" data-aos-delay="500">
+                          هدفنا
+                        </h1>
+                        <p class="fw-bold fs-5 text-center text-white mt-3" data-aos="fade-up" data-aos-delay="600">
+                          تقديم تجربة فريدة لعشاق العطور، من خلال توفير مجموعة
+                          منتقاة بعناية من أجود الروائح العالمية. نهدف إلى إضفاء
+                          لمسة من الأناقة والجاذبية على حياة عملائنا، مع التركيز
+                          على الجودة والفخامة في كل منتج.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- رؤيتنا -->
+                  <div class="swiper-slide h-100" data-aos="fade-left" data-aos-delay="400">
+                    <div class="row h-100 g-0 banner-content w-100 h-100 bg-secondary">
+                      <div class="col h-100 d-flex justify-content-center align-items-center flex-column p-3 p-lg-5">
+                        <h1 class="text-center text-white" data-aos="fade-down" data-aos-delay="500">
+                          رؤيتنا
+                        </h1>
+                        <p class="fw-bold fs-5 text-center text-white mt-3" data-aos="fade-up" data-aos-delay="600">
+                          أن نكون الوجهة الأولى لعشاق العطور الفاخرة، من خلال
+                          تقديم تجربة تسوق مبتكرة وسلسة. نسعى لبناء علاقات طويلة
+                          الأمد مع عملائنا عبر الجودة، الأناقة، والتميّز في كل
+                          عطر نقدمه، مع جعل كل تجربة شراء ممتعة ومميزة.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination" data-aos="zoom-in" data-aos-delay="700"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="pt-3 about-us stats-section">
+      <div class="container-fluid image-sticky-background my-5 py-3">
+        <h1 class="text-center mb-5"></h1>
+        <div class="stats-container-xxl pb-4 g-0 row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="stat-item p-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="bg-white shadow-sm p-5 d-flex justify-content-center flex-column align-items-center gap-2">
+              <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <ellipse cx="41.3" cy="42.3" rx="12.2" ry="13.5"></ellipse>
+                  <path d="M52.6,57.4c-3.1,2.8-7,4.5-11.3,4.5c-4.3,0-8.3-1.7-11.3-4.6c-5.5,2.5-11,5.7-11,10.7v2.1 c0,2.5,2,4.5,4.5,4.5h35.7c2.5,0,4.5-2,4.5-4.5v-2.1C63.6,63,58.2,59.9,52.6,57.4z"></path>
+                  <path d="M68,47.4c-0.2-0.1-0.3-0.2-0.5-0.3c-0.4-0.2-0.9-0.2-1.3,0.1c-2.1,1.3-4.6,2.1-7.2,2.1c-0.3,0-0.7,0-1,0 c-0.5,1.3-1,2.6-1.7,3.7c0.4,0.2,0.9,0.3,1.4,0.6c5.7,2.5,9.7,5.6,12.5,9.8H75c2.2,0,4-1.8,4-4v-1.9C79,52.6,73.3,49.6,68,47.4z"></path>
+                  <path d="M66.9,34.2c0-4.9-3.6-8.9-7.9-8.9c-2.2,0-4.1,1-5.6,2.5c3.5,3.6,5.7,8.7,5.7,14.4c0,0.3,0,0.5,0,0.8 C63.4,43,66.9,39.1,66.9,34.2z"></path>
+                </g>
+              </svg>
+              <p>
+                <span class="counter" data-target="1000000">0</span>
+                + عميل
+              </p>
+            </div>
+          </div>
+          <div class="stat-item p-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-white shadow-sm p-5 d-flex justify-content-center flex-column align-items-center gap-2">
+              <svg fill="#000000" height="200px" width="200px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.5 297.5" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 297.5 297.5">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path d="m172.416,124.813c-15.453-15.461-24.005-35.976-24.134-57.813h-68.452l-10.732-46.138-58.141-19.967-10.719,31.21 40.858,14.032 29.058,124.932 9.943,43.931h173l17.236-76.146c-11.76,6.456-25.251,10.137-39.59,10.137-22.035-0.007-42.75-8.593-58.327-24.178z"></path>
+                    <circle cx="113.097" cy="265" r="32.5"></circle>
+                    <circle cx="220.097" cy="265" r="32.5"></circle>
+                    <path d="m230.748,133c0.007,0 0.013,0 0.02,0 36.717,0 66.484-29.765 66.495-66.482 0.009-36.724-29.754-66.518-66.479-66.518 0,0-0.012,0-0.019,0-36.717,0-66.485,29.765-66.495,66.482-0.012,36.724 29.752,66.518 66.478,66.518zm-21.758-72.162l12.631,12.632 30.922-30.922 11.314,11.314-42.236,42.234-23.946-23.946 11.315-11.312z"></path>
+                  </g>
+                </g>
+              </svg>
+              <p>
+                <span class="counter" data-target="1000000">0</span>
+                + مبيعاتنا
+              </p>
+            </div>
+          </div>
+          <div class="stat-item p-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="bg-white shadow-sm p-5 d-flex justify-content-center flex-column align-items-center gap-2">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M21 5L19 12H7.37671M20 16H8L6 3H3M11.5 7L13.5 9M13.5 9L15.5 7M13.5 9V3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+              <p>
+                <span class="counter" data-target="4000">0</span>
+                + منتج
+              </p>
+            </div>
+          </div>
+          <div class="stat-item p-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="bg-white shadow-sm p-5 d-flex justify-content-center flex-column align-items-center gap-2">
+              <svg id="Layer_1" fill="#000000" height="200px" width="200px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g>
+                      <g>
+                        <path d="M512,194.313v-37.012c0-2.554-1.035-4.866-2.708-6.54c-0.001-0.001-0.001-0.002-0.002-0.004l-74.024-74.024 c-1.735-1.735-4.089-2.709-6.542-2.709H181.976c-5.11,0-9.253,4.142-9.253,9.253c0,5.111,4.143,9.253,9.253,9.253h242.915 l55.518,55.518H31.591L87.109,92.53h57.855c5.11,0,9.253-4.142,9.253-9.253c0-5.111-4.143-9.253-9.253-9.253H83.277 c-2.454,0-4.808,0.975-6.542,2.709L2.711,150.757c-0.001,0-0.001,0.001-0.001,0.003C1.035,152.434,0,154.746,0,157.301v37.012 c0,14.796,4.559,28.544,12.337,39.925v194.485c0,5.111,4.143,9.253,9.253,9.253H490.41c5.11,0,9.253-4.142,9.253-9.253V280.675 c0-5.111-4.143-9.253-9.253-9.253c-5.11,0-9.253,4.142-9.253,9.253V419.47H191.229V293.012c0-5.111-4.143-9.253-9.253-9.253 H70.94c-5.11,0-9.253,4.142-9.253,9.253V419.47H30.843V252.794c11.414,7.852,25.225,12.459,40.096,12.459 c26.396,0,49.47-14.49,61.687-35.935c12.216,21.445,35.291,35.935,61.687,35.935c26.396,0,49.47-14.49,61.687-35.935 c12.216,21.445,35.291,35.935,61.687,35.935s49.47-14.49,61.687-35.935c12.216,21.445,35.291,35.935,61.687,35.935 C480.177,265.253,512,233.43,512,194.313z M80.193,302.265h92.53V419.47h-92.53V302.265z M441.06,246.747 c-28.913,0-52.434-23.521-52.434-52.434c0-5.111-4.143-9.253-9.253-9.253c-5.11,0-9.253,4.142-9.253,9.253 c0,28.913-23.521,52.434-52.434,52.434c-28.913,0-52.434-23.521-52.434-52.434c0-5.111-4.143-9.253-9.253-9.253 s-9.253,4.142-9.253,9.253c0,28.913-23.521,52.434-52.434,52.434c-28.913,0-52.434-23.521-52.434-52.434 c0-5.111-4.143-9.253-9.253-9.253c-5.11,0-9.253,4.142-9.253,9.253c0,28.913-23.521,52.434-52.434,52.434 s-52.434-23.521-52.434-52.434v-27.759h474.988v27.759C493.494,223.226,469.973,246.747,441.06,246.747z"></path>
+                        <path d="M144.964,345.446c-5.11,0-9.253,4.142-9.253,9.253v12.337c0,5.111,4.143,9.253,9.253,9.253s9.253-4.142,9.253-9.253 v-12.337C154.217,349.587,150.074,345.446,144.964,345.446z"></path>
+                        <path d="M268.337,370.12c-5.11,0-9.253,4.142-9.253,9.253c0,5.111,4.143,9.253,9.253,9.253H441.06 c5.11,0,9.253-4.142,9.253-9.253v-86.361c0-5.111-4.143-9.253-9.253-9.253H231.325c-5.11,0-9.253,4.142-9.253,9.253v86.361 c0,5.111,4.143,9.253,9.253,9.253c5.11,0,9.253-4.142,9.253-9.253v-77.108h191.229v67.855H268.337z"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <p>
+                <span class="counter" data-target="35">0</span>
+                + فرع
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <h1 class="text-center mb-5" data-aos="fade-up">قيمنا</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col text-center mb-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="position-relative about-us-icon-section-parent p-3 shadow-sm">
+              <div class="about-us-icon-section">
+                <div class="about-us-icon">
+                  <svg id="Layer_1" fill="#000000" height="200px" width="200px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <path d="M473.043,233.739c0-11.769-3.177-23.26-9.109-33.391c15.138-25.848,11.194-58.968-10.451-80.613 c-4.348-4.348-9.197-8.003-14.405-10.952c0.381-2.853,0.574-5.725,0.574-8.608c0-36.824-29.959-66.783-66.783-66.783 c-2.953,0-5.895,0.2-8.816,0.599C352.426,13.388,330.426,0,306.087,0C286.155,0,268.247,8.789,256,22.68 C243.753,8.789,225.845,0,205.913,0c-24.339,0-46.339,13.388-57.966,33.99c-39.67-5.416-75.599,25.681-75.599,66.184 c0,2.883,0.194,5.755,0.574,8.608c-5.208,2.948-10.057,6.605-14.405,10.952c-21.64,21.639-25.594,54.757-10.451,80.613 c-5.932,10.131-9.109,21.622-9.109,33.391c0,24.339,13.388,46.339,33.99,57.966c-0.007,0.051-0.011,0.102-0.018,0.152 c-5.237,40.219,26.181,75.447,66.202,75.447c2.953,0,5.895-0.2,8.816-0.599c5.882,10.424,14.422,18.995,24.575,24.926v36.891 C172.522,474.552,209.97,512,256,512s83.478-37.448,83.478-83.478v-36.891c10.152-5.93,18.692-14.503,24.575-24.925 c2.922,0.398,5.863,0.599,8.816,0.599c40.518,0,71.586-35.925,66.184-75.599C459.656,280.078,473.043,258.078,473.043,233.739z M173.871,342.585c-1.97-7.282-8.581-12.336-16.117-12.336c-6.55,0-8.678,3.664-18.623,3.664c-44.111,0-44.157-66.783,0-66.783 c9.22,0,16.696-7.475,16.696-16.696c0-9.22-7.475-16.696-16.696-16.696c-21.74,0-41.081,10.447-53.284,26.578 c-8.284-6.145-13.499-15.903-13.499-26.578c0-10.374,4.735-17.808,8.707-22.216c5.722-6.351,5.722-15.998,0-22.349 c-19.882-22.074-3.268-55.609,24.684-55.609c8.919,0,17.305,3.474,23.611,9.78c6.519,6.52,17.091,6.52,23.611,0 s6.52-17.091,0-23.611c-12.613-12.614-29.384-19.561-47.222-19.561c0-18.412,14.979-33.391,33.391-33.391 c4.162,0,8.334,0.828,12.403,2.462c9.269,3.721,19.727-1.485,22.338-11.133c3.938-14.555,17.114-24.721,32.042-24.721 c18.412,0,33.391,14.979,33.391,33.391v101.854c-38.057,7.756-66.783,41.485-66.783,81.799c0,9.22,7.475,16.696,16.696,16.696 s16.696-7.475,16.696-16.696c0-21.766,13.959-40.323,33.391-47.215v130.694c0,18.412-14.979,33.391-33.391,33.391 C190.985,367.304,177.809,357.139,173.871,342.585z M256,478.609c-21.766,0-40.323-13.959-47.215-33.391h94.429 C296.323,464.65,277.766,478.609,256,478.609z M306.087,411.826H205.913v-11.13c19.932,0,37.84-8.789,50.087-22.681 c12.247,13.892,30.155,22.681,50.087,22.681V411.826z M430.945,211.523c3.972,4.409,8.707,11.843,8.707,22.216 c0,10.675-5.215,20.433-13.499,26.578c-12.202-16.131-31.544-26.578-53.284-26.578c-9.22,0-16.696,7.475-16.696,16.696 c0,9.22,7.475,16.696,16.696,16.696c43.947,0,43.925,66.783,0,66.783c-4.162,0-8.334-0.828-12.403-2.462 c-9.269-3.72-19.726,1.484-22.338,11.133c-3.938,14.555-17.114,24.721-32.042,24.721c-18.412,0-33.391-14.979-33.391-33.391 V203.219c19.433,6.892,33.391,25.45,33.391,47.215c0,9.22,7.475,16.696,16.696,16.696s16.696-7.475,16.696-16.696 c0-40.313-28.725-74.042-66.783-81.799V66.783c0-18.412,14.979-33.391,33.391-33.391c14.928,0,28.104,10.165,32.042,24.72 c2.609,9.641,13.062,14.858,22.338,11.133c4.068-1.633,8.241-2.461,12.403-2.461c18.412,0,33.391,14.979,33.391,33.391 c-17.838,0-34.609,6.946-47.222,19.561c-6.52,6.52-6.52,17.091,0,23.611c6.519,6.52,17.091,6.52,23.611,0 c6.308-6.306,14.692-9.78,23.611-9.78c28.082,0,44.509,33.599,24.684,55.608C425.223,195.525,425.223,205.171,430.945,211.523z"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="section-title">الابتكار</h2>
+              <p class="section-content">
+                نبتكر دائمًا طرقًا جديدة لتقديم أجود العطور، مع تشكيلات فريدة
+                تناسب كل ذوق وتلبي رغبات عملائنا.
+              </p>
+            </div>
+          </div>
+          <div class="col text-center" data-aos="zoom-in" data-aos-delay="200">
+            <div class="position-relative about-us-icon-section-parent p-3 shadow-sm">
+              <div class="about-us-icon-section">
+                <div class="about-us-icon">
+                  <svg class="bi bi-transparency" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 6.5a6.5 6.5 0 0 1 12.346-2.846 6.5 6.5 0 1 1-8.691 8.691A6.5 6.5 0 0 1 0 6.5m5.144 6.358a5.5 5.5 0 1 0 7.714-7.714 6.5 6.5 0 0 1-7.714 7.714m-.733-1.269q.546.226 1.144.33l-1.474-1.474q.104.597.33 1.144m2.614.386a5.5 5.5 0 0 0 1.173-.242L4.374 7.91a6 6 0 0 0-.296 1.118zm2.157-.672q.446-.25.838-.576L5.418 6.126a6 6 0 0 0-.587.826zm1.545-1.284q.325-.39.576-.837L6.953 4.83a6 6 0 0 0-.827.587l4.6 4.602Zm1.006-1.822q.183-.562.242-1.172L9.028 4.078q-.58.096-1.118.296l3.823 3.824Zm.186-2.642a5.5 5.5 0 0 0-.33-1.144 5.5 5.5 0 0 0-1.144-.33z"></path>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="section-title">الشفافية</h2>
+              <p class="section-content">
+                نضمن الشفافية الكاملة في جميع تعاملاتنا، لتثقوا بأن كل منتج أصلي
+                وبجودة عالية.
+              </p>
+            </div>
+          </div>
+          <div class="col text-center" data-aos="zoom-in" data-aos-delay="300">
+            <div class="position-relative about-us-icon-section-parent p-3 shadow-sm">
+              <div class="about-us-icon-section">
+                <div class="about-us-icon">
+                  <svg class="icon" viewBox="0 0 1024 1024" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M678.584675 765.172506v157.995691l75.697852 31.505938V723.768586a429.379161 429.379161 0 0 1-75.697852 41.40392zM269.717473 723.768586V953.098138l75.697852-31.505938v-156.419694a429.309162 429.309162 0 0 1-75.697852-41.40392zM511.999 798.78444a428.955162 428.955162 0 0 1-105.993793-13.241974v238.457534L511.999 979.886086 617.992793 1023.998V785.542466A429.025162 429.025162 0 0 1 511.999 798.78444zM511.999 0C308.479398 0 142.903721 165.575677 142.903721 369.097279S308.479398 738.192558 511.999 738.192558s369.097279-165.575677 369.097279-369.097279S715.520602 0 511.999 0z m0 660.198711c-161.345685 0-292.611428-131.265744-292.611428-292.611429 0-161.347685 131.265744-292.613428 292.611428-292.613428s292.611428 131.265744 292.611428 292.613428c0 161.347685-131.263744 292.611428-292.611428 292.611429zM511.999 135.563735c-127.93575 0-232.021547 104.083797-232.021547 232.023547S384.06325 599.606829 511.999 599.606829s232.021547-104.083797 232.021547-232.021547c0-127.93775-104.083797-232.021547-232.021547-232.021547zM607.360814 502.999018L511.999 452.865115 416.639186 502.999018l18.211965-106.183793-77.14785-75.199853 106.617792-15.49397L511.999 209.509591l47.679907 96.611811 106.617792 15.49397-77.14785 75.199853 18.211965 106.183793z"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="section-title">الجودة</h2>
+              <p class="section-content">
+                نحرص على اختيار أفضل العطور العالمية والمحلية لضمان تجربة فاخرة
+                ومميزة لكل زبون.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-white shadow-lg">
+      <div class="container-xxl">
+        <div class="row g-0 py-5">
+          <div class="col-md-6 about-us">
+            <img class="footer-logo" src="assets/images/logo/logo.png" alt="سوكتري">
+            <p class="lines3">
+              سوكتري هو متجرك المفضل لاكتشاف أرقى العطور، المسك الفاخر، وأحدث
+              الشنط المميزة. استمتع بتجربة تسوق فاخرة تجعل كل اختيار يعكس أناقتك
+              وجاذبيتك.
+            </p>
+            <div class="social-icons mb-3">
+              <div class="d-flex gap-3">
+                <a class="social-media-link" href title="Twitter-X">
+                  <svg class="bi bi-twitter-x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"></path>
+                  </svg>
+                </a>
+                <a class="social-media-link" href title="Whatsapp">
+                  <svg class="bi bi-whatsapp" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+                  </svg>
+                </a>
+                <a class="social-media-link" href title="Tiktok">
+                  <svg class="bi bi-tiktok" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                  </svg>
+                </a>
+                <a class="social-media-link" href title="Instagram">
+                  <svg class="bi bi-instagram" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 quick-links">
+            <h4 class="text-white fw-bold mb-4">الوصول السريع</h4>
+            <div class="row gap-0 g-0">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li class="my-2">
+                    <a class="text-decoration-none fw-bold active" href="index.html">الرئيسية</a>
+                  </li>
+                  <li></li>
+                  <li>
+                    <a class="text-decoration-none fw-bold" href="about-us.html">من نحن</a>
+                  </li>
+                  <li>
+                    <a class="text-decoration-none fw-bold" href="products.html">
+                      المتجر
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-decoration-none fw-bold" href="contact-us.html">تواصل معنا</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li class="my-2">
+                    <a class="text-decoration-none fw-bold" href>السلة</a>
+                  </li>
+                  <li>
+                    <a class="text-decoration-none fw-bold" href="favorite.html">المفضلة</a>
+                  </li>
+                  <li>
+                    <a class="text-decoration-none fw-bold" href="login.html">تسجيل الدخول</a>
+                  </li>
+                  <li>
+                    <a class="text-decoration-none fw-bold" href="sign-up.html">
+                      تسجيل جديد
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 contact-info">
+            <h4 class="text-white fw-bold mb-4">معلومات التواصل</h4>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="footer-social-links">
+                <svg class="bi bi-geo-alt-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"></path>
+                </svg>
+              </div>
+              <a class="text-decoration-none fw-bold"> سلطنة عمان</a>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="footer-social-links">
+                <svg class="bi bi-telephone-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"></path>
+                </svg>
+              </div>
+              <a class="text-decoration-none fw-bold" href="tel:+968 99 123 456">+968 99 123 456</a>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="footer-social-links">
+                <svg class="bi bi-envelope-at-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"></path>
+                  <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"></path>
+                </svg>
+              </div>
+              <a class="text-decoration-none fw-bold" href="mailto:Socotry.om">Socotry.om</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center copyright">
+          <p>جميع الحقوق محفوظة لموقع سوكتري &copy; 2025</p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/lib/jquery.min.js"></script>
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/lib/swiper-bundle.min.js"></script>
+    <script src="assets/js/lib/select2.min.js"></script>
+    <script src="assets/js/lib/aos.js"></script>
+    <script src="assets/js/custom/script.js"></script>
+    <script src="assets/js/custom/about-us.js"></script>
+    <script src="assets/js/custom/counters.js"></script>
+  </body>
+</html>

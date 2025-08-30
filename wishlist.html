@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <title>Socotry - سوكتري</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="author" content>
+        <meta name="keywords" content>
+        <meta name="description" content="">
+        <link type="image/x-icon" href="assets/images/logo/logo.png" rel="shortcut icon">
+        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="assets/css/select2-bootstrap-5-theme.rtl.min.css">
+        <link rel="stylesheet" href="assets/css/select2.min.css">
+        <link rel="stylesheet" href="assets/css/aos.css">
+    </head>
+    <body>
+        <div class="preloader-wrapper">
+            <div class="d-flex justify-content-center align-items-center flex-column w-100 h-100">
+                <img
+                    class=""
+                    width="200"
+                    src="assets/images/logo/logo.png"
+                    alt
+                >
+                <span class="indicator-progress text-primary">
+                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                    انتظر من فضلك ...
+                </span>
+            </div>
+        </div>
+        <div
+            class="offcanvas offcanvas-end"
+            id="offcanvasCart"
+            data-bs-scroll="true"
+            aria-labelledby="My Cart"
+            tabindex="-1"
+        >
+            <div class="offcanvas-header align-items-center justify-content-between border-bottom">
+                <h5 class="d-flex gap-2 align-items-center m-0">
+                    <span class="text-primary">
+                        سلة التسوق
+                    </span>
+                    <span class="badge bg-primary rounded-circle">1</span>
+                </h5>
+                <button
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    type="button"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="order-md-last">
+                    <ul class="list-group mb-3 ">
+                        <li class="list-group-item  d-flex align-items-center lh-sm justify-content-between">
+                            <div class="d-flex   gap-3 align-items-center">
+                                <figure class="cart-product-image overflow-hidden">
+                                    <a href="index.html" title="Product Title">
+                                        <img class="tab-image" src="assets/images/products/الذهبي.png" alt="product-image">
+                                    </a>
+                                </figure>
+                                <div>
+                                    <h6 class="my-0 text-twoline">
+                                       المسك الذهبي
+                                    </h6>
+                                    <div class="product-quantity my-2">
+                                        <div class="product-quantity d-flex align-items-center ">
+                                            <button class="btn btn-sm btn-outline-primary btn-minus" type="button" title="minus-one">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="16"
+                                                    height="16"
+                                                    fill="currentColor"
+                                                    class="bi bi-dash-lg"
+                                                    viewBox="0 0 16 16"
+                                                >
+                                                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+                                                </svg>
+                                            </button>
+                                            <label for="search" class="d-none">Searh</label>
+                                            <input
+                                                id="search"
+                                                name="search"
+                                                class="form-control text-center quantity-input mx-2"
+                                                type="number"
+                                                value="1"
+                                                min="1"
+                                                style="width: 60px;"
+                                            >
+                                            <button class="btn btn-outline-primary btn-plus" type="button" title="plus one">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="16"
+                                                    height="16"
+                                                    fill="currentColor"
+                                                    class="bi bi-plus-lg fw-bold"
+                                                    viewBox="0 0 16 16"
+                                                >
+                                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="quantity">
+                                        1 ×
+                                        <span class="">
+                                            <bdi>
+                                                699.00&nbsp;
+                                                <span class="">
+                                                    <span class="Saudi_Riyal_Symbol">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            id="Layer_1"
+                                                            data-name="Layer 1"
+                                                            viewBox="0 0 1124.14 1256.39"
+                                                        >
+                                                            <path d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z"/>
+                                                            <path d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z"/>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </bdi>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" title="delete-favorite" class="btn btn-link text-danger  p-0 me-2 ">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offcanvas-footer bg-light border-top ">
+                <div class="border-bottom  p-3 d-flex justify-content-between align-items-center">
+                    <p class="fs-5 fw-bold m-0">المجموع:</p>
+                    <p class="fs-5 text-primary m-0 fw-bold">
+                        699.00
+                        <span class="Saudi_Riyal_Symbol">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                id="Layer_1"
+                                data-name="Layer 1"
+                                viewBox="0 0 1124.14 1256.39"
+                            >
+                                <path d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z"/>
+                                <path d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z"/>
+                            </svg>
+                        </span>
+                    </p>
+                </div>
+                <div class=" p-3 d-flex align-items-center gap-2">
+                    <a class=" btn btn-outline-primary w-100" type="submit" href="cart.html">عرض السلة</a>
+                    <a class=" btn btn-primary w-100 " type="submit" href="check-out.html">إتمام الدفع</a>
+                </div>
+            </div>
+        </div>
+        <header>
+            
+            <nav class=" container-xxl navbar navbar-expand-lg align-items-center mt-lg-5">
+                <a class="navbar-brand  px-lg-0   " href="index.html">
+                    <img
+                        class=""
+                        width="120"
+                        alt="Logo Delivin"
+                        src="/assets/images/logo/logo.png"
+                    >
+                </a>
+                <div class="order-lg-last d-flex">
+                    <button
+                        class="navbar-toggler order-last  "
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="d-flex menu-of-cart-fav-user  position-relative justify-content-end list-unstyled m-0 ">
+                        <li class="">
+                            <div class="position-relative ">
+                                <a
+                                    class="rounded-circle  p-2 mx-1 user-list-container"
+                                    data-bs-placement="bottom"
+                                    href="javascript:void(0)"
+                                    id="toggleUserList"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-person"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                    </svg>
+                                </a>
+                                <div class="card user-list-2 border-0 position-absolute " id="userlist">
+                                    <div class="card-body  p-3   ">
+                                        <ul class="user-list list-unstyled m-0 ">
+                                            <li class=" ">
+                                                <a href="dashboard.html" class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center active ">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        fill="currentColor"
+                                                        class="bi bi-columns-gap"
+                                                        viewBox="0 0 16 16"
+                                                    >
+                                                        <path d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/>
+                                                    </svg>
+                                                    لوحة التحكم
+                                                </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="my-orders.html" class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center ">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        fill="currentColor"
+                                                        class="bi bi-list-check"
+                                                        viewBox="0 0 16 16"
+                                                    >
+                                                        <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                                                    </svg>
+                                                    الطلبات
+                                                </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="wishlist.html" class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center ">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        fill="currentColor"
+                                                        class="bi bi-star"
+                                                        viewBox="0 0 16 16"
+                                                    >
+                                                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                                    </svg>
+                                                    المفضلة
+                                                </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="my-account.html" class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        fill="currentColor"
+                                                        class="bi bi-person-circle"
+                                                        viewBox="0 0 16 16"
+                                                    >
+                                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                                    </svg>
+                                                    حسابي
+                                                </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="" class="text-decoration-none text-danger p-2 d-flex gap-2 align-items-center">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        fill="currentColor"
+                                                        class="bi bi-box-arrow-right"
+                                                        viewBox="0 0 16 16"
+                                                    >
+                                                        <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                                                        <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                                                    </svg>
+                                                    تسجيل الخروج
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a
+                                class="rounded-circle  p-2 mx-1"
+                                data-bs-placement="bottom"
+                                data-bs-title="تسجيل الدخول"
+                                data-bs-toggle="tooltip"
+                                href="login.html"
+                                title="Authentication"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-person-video2"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path d="M10 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                                    <path d="M2 1a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM1 3a1 1 0 0 1 1-1h2v2H1zm4 10V2h9a1 1 0 0 1 1 1v9c0 .285-.12.543-.31.725C14.15 11.494 12.822 10 10 10c-3.037 0-4.345 1.73-4.798 3zm-4-2h3v2H2a1 1 0 0 1-1-1zm3-1H1V8h3zm0-3H1V5h3z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a
+                                class="rounded-circle  p-2 mx-1 position-relative"
+                                data-bs-placement="bottom"
+                                data-bs-target="#offcanvasCart"
+                                data-bs-title="السلة"
+                                data-bs-toggle="offcanvas"
+                                href="#"
+                                title="Cart"
+                                aria-controls="offcanvasCart"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-basket"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
+                                </svg>
+                                <span class="number-of-items-in-cart position-absolute  d-flex justify-content-center align-items-center bg-white border shodaw rounded-circle">
+                                    <span class style="font-size: 12px;">1</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2  nav  gap-4">
+                        <li class="nav-item">
+                            <a class="text-decoration-none   header-link active" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" text-decoration-none header-link" href="products.html">متجر سوكتري</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="  text-decoration-none header-link" href="about-us.html">عن سوكتري</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="  text-decoration-none header-link" href="contact-us.html">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" text-decoration-none mt-lg-2  header-link2 text-dark" href="franchise-requset.html">طلب الفرنشايز</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="container-fluid py-4 p-2 bg-white">
+            <div class="container-xxl">
+                <div class=" mb-3">
+                    <h4 class="fw-bold d-flex gap-2 align-items-center">
+                        الأمنيات
+                        <span class="badge bg-primary ">1</span>
+                    </h4>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="text-decoration-none text-primary fw-bold">
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="text-decoration-none text-primary fw-bold">
+                                حسابي
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active p-0  fw-bold" aria-current="page">
+                            الأمنيات
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <section class="container-fluid my-3 p-2">
+            <div class="row p-0 g-0 ">
+                <div class="col-xl-3 p-2 sticky-section ">
+                    <div class="card border-0">
+                        <div class="card-body  p-3   ">
+                            <div class="d-flex gap-3 align-items-center p-3">
+                                <div class="user-image-container overflow-hidden position-relative ">
+                                    <img
+                                        src="assets/images/users/user-image.jpg"
+                                        alt=""
+                                        class="position-absolute object-fit-cover rounded-circle w-100 h-100"
+                                        srcset=""
+                                    >
+                                </div>
+                                <div>
+                                    <h6 class="mb-2">Mohammed ALshaer</h6>
+                                    <p class="m-0 fw-bold">سلطنة عمان</p>
+                                </div>
+                            </div>
+                            <ul class="user-list
+                             list-unstyled m-0 row row-cols-1 row-cols-md-2 row-cols-xl-1">
+                                <li class="user-list-item col">
+                                    <a href="dashboard.html" class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center  ">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-columns-gap"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/>
+                                        </svg>
+                                        لوحة التحكم
+                                    </a>
+                                </li>
+                                <li class="user-list-item col">
+                                    <a href="my-orders.html" class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center  ">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-list-check"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                                        </svg>
+                                        الطلبات
+                                    </a>
+                                </li>
+                                <li class="user-list-item col">
+                                    <a href="address.html" class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center ">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-geo-fill"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+                                        </svg>
+                                        العنوان
+                                    </a>
+                                </li>
+                                <li class="user-list-item col">
+                                    <a href="wishlist.html" class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center active">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-star"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                        </svg>
+                                        المفضلة
+                                    </a>
+                                </li>
+                                <li class="user-list-item col">
+                                    <a href="my-account.html" class="text-decoration-none text-dark p-2 d-flex gap-2 align-items-center">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-person-circle"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                        </svg>
+                                        حسابي
+                                    </a>
+                                </li>
+                                <li class="user-list-item col">
+                                    <a href="" class="text-decoration-none text-danger p-2 d-flex gap-2 align-items-center">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-box-arrow-right"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                                        </svg>
+                                        تسجيل الخروج
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 p-2">
+                    <div class="card border-0 mb-3">
+                        <div class="card-body p-4 ">
+                            <div class="row  ">
+                                <div class="d-flex col-xl-8  gap-3 align-items-center  ">
+                                    <div>
+                                        <figure class="cart-product-image overflow-hidden m-0">
+                                            <a href="index.html" title="Product Title">
+                                                <img class="tab-image" src="assets/images/products/الذهبي.png" alt="product-image">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <h6 class="my-0 text-primary text-twoline">
+                                           المسك الذهبي
+                                        </h6>
+                                        <div class="quantity">
+                                            <span class="price ms-2">
+                                                18
+                                                <span class="Saudi_Riyal_Symbol">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        id="Layer_1"
+                                                        data-name="Layer 1"
+                                                        viewBox="0 0 1124.14 1256.39"
+                                                    >
+                                                        <path d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z"/>
+                                                        <path d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex col-xl-4 align-items-center gap-2 pt-3 pt-xl-0">
+                                    <button type="button" title="toggle-favorite" class="btn  btn-primary w-50 w-xl-auto      ">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-basket"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
+                                        </svg>
+                                        <span class=""> أضف للسلة</span>
+                                    </button>
+                                    <button type="button" title="toggle-favorite" class="btn btn-sm btn-outline-danger   w-50   w-xl-auto    ">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-x-lg"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                        </svg>
+                                        <span class=" ">حذف</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer   bg-white shadow-lg">
+            <div class="container-xxl ">
+                <div class="row  py-5">
+                    <div class="col-md-6 about-us">
+                        <img src="assets/images/logo/logo.png" alt="سوكتري" class="footer-logo">
+                        <p class="lines3">سوكتري هو متجرك المفضل لاكتشاف أرقى العطور، المسك الفاخر، وأحدث الشنط المميزة. استمتع بتجربة تسوق فاخرة تجعل كل اختيار يعكس أناقتك وجاذبيتك.</p>
+                        <div class="social-icons mb-3">
+                            <div class="d-flex gap-3">
+                                <a href="" class="social-media-link" title="Twitter-X">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-twitter-x"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                    </svg>
+                                </a>
+                                <a href="" class="social-media-link" title="Whatsapp">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-whatsapp"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                                    </svg>
+                                </a>
+                                <a href="" class="social-media-link" title="Tiktok">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-tiktok"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                                    </svg>
+                                </a>
+                                <a href="" class="social-media-link" title="Instagram">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-instagram"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 quick-links">
+                        <h4 class="text-white fw-bold mb-4">الوصول السريع</h4>
+                        <div class="row gap-0 g-0">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="my-2">
+                                        <a class="text-decoration-none fw-bold active " href="index.html">الرئيسية</a>
+                                    </li>
+                                    <li>
+                                        
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none fw-bold  " href="about-us.html">من نحن</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none fw-bold " href="products.html">
+                                            المتجر
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none fw-bold " href="contact-us.html">تواصل معنا</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="my-2">
+                                        <a class="text-decoration-none fw-bold " href="">السلة</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none fw-bold  " href="favorite.html">المفضلة</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none fw-bold  " href="login.html">تسجيل الدخول</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none fw-bold " href="sign-up.html">
+                                            تسجيل جديد
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 contact-info">
+                        <h4 class="text-white fw-bold mb-4">معلومات التواصل</h4>
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="footer-social-links">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-geo-alt-fill"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                </svg>
+                            </div>
+                            <a class="text-decoration-none  fw-bold">  سلطنة عمان</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="footer-social-links">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-telephone-fill"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                </svg>
+                            </div>
+                            <a href="tel:+968 99 123 456" class="text-decoration-none fw-bold">+968 99 123 456</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="footer-social-links">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-envelope-at-fill"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                                    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                                </svg>
+                            </div>
+                            <a href="mailto:Socotry.om" class="text-decoration-none  fw-bold ">Socotry.om</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center copyright ">
+                    <p>جميع الحقوق محفوظة لموقع سوكتري &copy; 2025</p>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/lib/jquery.min.js"></script>
+        <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/lib/swiper-bundle.min.js"></script>
+        <script src="assets/js/lib/select2.min.js"></script>
+        <script src="assets/js/lib/aos.js"></script>
+        <script src="assets/js/custom/script.js"></script>
+        <script src="assets/js/custom/counters.js"></script>
+    </body>
+</html>
